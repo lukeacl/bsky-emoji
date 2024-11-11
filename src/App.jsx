@@ -85,7 +85,7 @@ function App() {
           </a>
         </span>
         <span class="font-extralight text-xs opacity-50 mt-1">
-          {data().size} - {(data().rows * 1).toLocaleString()} Emoji Counted
+          {data().size} - {(data().emoji * 1).toLocaleString()} Emoji Counted
         </span>
       </div>
     </>
