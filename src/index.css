@@ -26,3 +26,7 @@
     overflow-y: hidden;
     z-index: -10000;
 }
+
+.clickable {
+    cursor: pointer;
+}

@@ -56,7 +56,15 @@ function App() {
 
   const emojiRowItem = (emoji, i) => (
     <span class="flex flex-col items-center px-1 py-1 aspect-square">
-      <span class="text-2xl">{emoji.emoji}</span>
+      <span class="text-2xl">
+        <a
+          href={"https://bsky.app/search?q=" + emoji.emoji}
+          target="_blank"
+          class="clickable"
+        >
+          {emoji.emoji}
+        </a>
+      </span>
       <span class="font-light text-xs opacity-50">
         {emoji.count.toLocaleString()}
       </span>
