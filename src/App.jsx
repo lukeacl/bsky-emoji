@@ -61,10 +61,9 @@ function App() {
           href={"https://bsky.app/search?q=" + emoji.emoji}
           target="_blank"
           class="clickable"
-        ></a>
-      </span>
-      <span class="font-light text-xs opacity-50">
-        {emoji.count.toLocaleString()}
+        >
+          {emoji.emoji}
+        </a>
       </span>
     </span>
   );
@@ -93,6 +92,10 @@ function App() {
 
 /*<span class="font-extralight text-xs opacity-50 mt-1">
   {data().size} - {(data().emoji * 1).toLocaleString()} Emoji Counted
+</span>*/
+
+/*<span class="font-light text-xs opacity-50">
+  {emoji.count.toLocaleString()}
 </span>*/
 
 export default App;
