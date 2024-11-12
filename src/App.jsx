@@ -88,12 +88,13 @@ function App() {
             @lukeacl.com
           </a>
         </span>
-        <span class="font-extralight text-xs opacity-50 mt-1">
-          {data().size} - {(data().emoji * 1).toLocaleString()} Emoji Counted
-        </span>
       </div>
     </>
   );
 }
+
+/*<span class="font-extralight text-xs opacity-50 mt-1">
+  {data().size} - {(data().emoji * 1).toLocaleString()} Emoji Counted
+</span>*/
 
 export default App;
