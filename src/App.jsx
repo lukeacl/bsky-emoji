@@ -79,6 +79,10 @@ function App() {
 
         {emojiRow("Last Hour", data().oneHour)}
 
+        {emojiRow("Last Day", data().oneDay)}
+
+        {emojiRow("Last Month", data().oneMonth)}
+
         <span class="font-light text-s opacity-75 mt-6">
           💕{" "}
           <a href="https://bsky.app/profile/lukeacl.com" target="_blank">
