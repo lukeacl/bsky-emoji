@@ -82,10 +82,6 @@ function App() {
 
         {emojiRow("One Hour", data().oneHour)}
 
-        {emojiRow("One Day", data().oneDay)}
-
-        {emojiRow("All Time", data().all)}
-
         <span class="font-light text-s opacity-75 mt-6">
           💕{" "}
           <a href="https://bsky.app/profile/lukeacl.com" target="_blank">
