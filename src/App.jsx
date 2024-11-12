@@ -75,6 +75,8 @@ function App() {
       <div class="flex flex-col items-center px-5 py-5">
         <span class="font-semibold text-2xl">Bluesky Emoji</span>
 
+        <span class="font-semibold text-xl">Most Used</span>
+
         {emojiRow("Last Minute", data().oneMinute)}
 
         {emojiRow("Last Hour", data().oneHour)}
