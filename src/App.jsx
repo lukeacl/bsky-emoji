@@ -78,9 +78,9 @@ function App() {
       <div class="flex flex-col items-center px-5 py-5">
         <span class="font-semibold text-2xl">Bluesky Emoji</span>
 
-        {emojiRow("One Minute", data().oneMinute)}
+        {emojiRow("Last Minute", data().oneMinute)}
 
-        {emojiRow("One Hour", data().oneHour)}
+        {emojiRow("Last Hour", data().oneHour)}
 
         <span class="font-light text-s opacity-75 mt-6">
           💕{" "}
