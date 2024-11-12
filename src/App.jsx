@@ -61,9 +61,7 @@ function App() {
           href={"https://bsky.app/search?q=" + emoji.emoji}
           target="_blank"
           class="clickable"
-        >
-          {emoji.emoji}
-        </a>
+        ></a>
       </span>
       <span class="font-light text-xs opacity-50">
         {emoji.count.toLocaleString()}
