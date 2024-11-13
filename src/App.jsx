@@ -5,7 +5,7 @@ function App() {
   const [all, setAll] = createSignal("");
 
   const connect = () => {
-    const ws = new WebSocket("https://bsky-emoji-api.lukeacl.com");
+    const ws = new WebSocket("https://api.skymoji.com");
     ws.addEventListener("open", (event) => {});
     ws.addEventListener("close", (event) => {
       setTimeout(() => {
@@ -25,13 +25,13 @@ function App() {
   };
 
   const fetchFresh = async () => {
-    const result = await fetch("https://bsky-emoji-api.lukeacl.com");
+    const result = await fetch("https://api.skymoji.com");
     const json = await result.json();
     setData(json);
   };
 
   const fetchAll = async () => {
-    const result = await fetch("https://bsky-emoji-api.lukeacl.com/all");
+    const result = await fetch("https://api.skymoji.com/all");
     const text = await result.text();
     setAll(text);
   };
