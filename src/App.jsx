@@ -73,9 +73,12 @@ function App() {
       <span class="background">{all()}</span>
       <span class="background-cover"></span>
       <div class="flex flex-col items-center px-5 py-5">
-        <span class="font-semibold text-2xl">Bluesky Emoji</span>
+        <span class="text-5xl">
+          {data().all && data().all.length > 0 ? data().all[0].emoji : ""}
+        </span>
+        <span class="font-semibold text-2xl">Skymoji</span>
 
-        <span class="font-semibold text-xl">Most Used</span>
+        <span class="font-medium text-s">Most Used Emoji</span>
 
         {emojiRow("Last Minute", data().oneMinute)}
 
@@ -85,7 +88,9 @@ function App() {
 
         {emojiRow("Last Month", data().oneMonth)}
 
-        <span class="font-light text-s opacity-75 mt-6">
+        {emojiRow("All Time", data().all)}
+
+        <span class="font-normal text-s opacity-75 mt-6">
           💕{" "}
           <a href="https://bsky.app/profile/lukeacl.com" target="_blank">
             @lukeacl.com
